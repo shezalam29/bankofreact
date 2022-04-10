@@ -6,19 +6,19 @@ import Credits from './components/Credits';
 import Debits from './components/Debits';
 import React, { useState } from 'react';
 
-function App() {
-
-
+const App = () => {
+  const [state, setState] = useState(<Credits/>);
+  
   return (
     <div>
       <img src={logo2} alt = 'banklogo' class ='center' />
       <Clock/>
       <div class = 'flex-parent jc-center'>
         <button> Login/Customize </button>
-        <button> Credits </button> 
-        <button> Debits </button> 
+        <button onClick = {() => setState(<Credits/>)}> Credits </button> 
+        <button onClick = {() => setState(<Debits/>)}> Debits </button> 
       </div>
-      <Credits/>
+      {state}
    </div>
   );
 }

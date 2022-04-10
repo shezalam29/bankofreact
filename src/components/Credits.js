@@ -23,14 +23,14 @@ class Credits extends React.Component {
 
     render(){
         return(
-        <div className = "container" align ='center'>
+        <div className = "container"  align ='center'>
             <h2><u>Credits</u></h2>
             {this.state.credits.map(data => {
                 return (
-                    <div className = 'container' key = {data.id}>
+                    <div className = 'container' class='box' key = {data.id}>
                         <h3>{data.description}</h3>
-                        <p>${data.amount}</p>
-                        <p>Date: {data.date.slice(0,10)} Time: {data.date.slice(12,23)} </p>
+                        <p class = 'red' > ${data.amount.toFixed(2)}</p>
+                        <p>Date: {data.date.slice(0,10)} Time: {data.date.slice(11,22)} </p>
                     </div>
 
                 )
