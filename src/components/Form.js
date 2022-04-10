@@ -30,11 +30,15 @@ const Form = () => {
                     <input type="text" id='usr' /> 
                     <br></br>
                     <br></br>
-                    Choose a background color: 
+                    Choose a background 
+                    <br></br>
+                    Type in the color or it's hex value (For example: #ABC15A): 
                     <input type="text" id='bg' />
                     <br></br>
                     <br></br>
-                    Choose a text color: 
+                    Choose a text color in hex 
+                    <br></br>
+                    Type in the color or it's hex value (For example: #ABC15A)
                     <input type="text" id='txt' />
                 </form>
                 <button class = 'center' onClick = { onSubmit }> 
