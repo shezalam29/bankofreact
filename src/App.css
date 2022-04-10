@@ -5,6 +5,27 @@
   width: 15%;
 }
 
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+button{
+  background-color: indianred;
+  margin: 20px;
+  color: white;
+  border-radius: 8px;
+  border-color: white;
+  font-size: 1.02rem;
+  cursor: pointer;
+  padding: 15px 15px;
+
+}
+
+
 .App {
   text-align: center;
 }

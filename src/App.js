@@ -10,6 +10,11 @@ function App() {
     <div>
       <img src={logo2} alt = 'banklogo' class ='center' />
       <Clock/>
+      <div class = 'flex-parent jc-center'>
+        <button> Login/Customize </button>
+        <button> Credits </button> 
+        <button> Debits </button> 
+      </div>
       <Credits/>
    </div>
   );
