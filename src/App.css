@@ -14,11 +14,11 @@
 }
 
 button{
-  background-color: indianred;
+  background-color:darkviolet;
   margin: 20px;
   color: white;
   border-radius: 8px;
-  border-color: white;
+  border-color: darkviolet;
   font-size: 1.02rem;
   cursor: pointer;
   padding: 15px 15px;
@@ -34,11 +34,13 @@ button{
 }
 
 .red{
-  color: red;
+  background-color: lightcoral;
+  font-weight: 800;
 }
 
-.blue{
-  color:green;
+.green{
+  background-color: lightgreen;
+  font-weight: 800;
 }
 
 .App {

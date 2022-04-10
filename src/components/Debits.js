@@ -27,7 +27,7 @@ class Debits extends React.Component {
                 return (
                     <div className = 'container' class='box' key = {data.id}>
                         <h3>{data.description}</h3>
-                        <p class = 'blue' >${data.amount}</p>
+                        <p class = 'green' >${data.amount}</p>
                         <p>Date: {data.date.slice(0,10)} Time: {data.date.slice(12,23)} </p>
                     </div>
                 )
