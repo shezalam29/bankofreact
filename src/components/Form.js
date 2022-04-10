@@ -26,7 +26,7 @@ const Form = () => {
                 </div>
                 <h2 class = 'center'><u>Customize Profile</u></h2>
                 <form class = 'center'>
-                    Enter username:
+                    Enter a username:
                     <input type="text" id='usr' /> 
                     <br></br>
                     <br></br>
