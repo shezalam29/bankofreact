@@ -3,8 +3,11 @@ import logo2 from './logo2.png'
 import './App.css';
 import Clock from './components/Clock';
 import Credits from './components/Credits';
+import Debits from './components/Debits';
+import React, { useState } from 'react';
 
 function App() {
+
 
   return (
     <div>
