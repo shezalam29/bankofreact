@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Clock component taken from React Docs/Class 
 class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -19,8 +20,10 @@ class Clock extends React.Component {
       date: new Date()
     });
   }
+  // Now it greets the user 
   render() {
     return (
+      // Span tag now to be manipulated by Javascript
       <div align = 'center'>
         <h1> Greetings, <span id = "username">guest user</span>. It's currently {this.state.date.toLocaleTimeString()}. </h1>
       </div>

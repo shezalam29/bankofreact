@@ -1,3 +1,4 @@
+// Credits component 
 import React, {Component} from "react";
 import axios from "axios";
 
@@ -13,12 +14,17 @@ class Credits extends React.Component {
     }
 
     componentDidMount() {
+        // Gets data from Credits API endpoint 
         axios.get('https://moj-api.herokuapp.com/credits')
         .then((response)=> {
             this.setState({credits: response.data})
         });
     }
 
+    // Populates results into state
+    // Shows then with description of Credit as title, 
+    // then dollar amount to two decimal points  
+    // then Date and Time spliced to ease of view 
     render() {
         return (
         <div align ='center' >

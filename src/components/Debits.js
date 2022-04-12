@@ -1,3 +1,4 @@
+// Debits componenet 
 import React, {Component} from "react";
 import axios from "axios";
 
@@ -13,12 +14,17 @@ class Debits extends React.Component {
     }
 
     componentDidMount() {
+        // Gets data from Debits API endpoint 
         axios.get('https://moj-api.herokuapp.com/debits')
         .then((response)=> {
             this.setState({debits: response.data})
         });
     }
 
+    // Populates results into state
+    // Shows then with description of Debit as title, 
+    // then dollar amount to two decimal points  
+    // then Date and Time spliced to ease of view
     render() {
         return (
         <div align ='center'>

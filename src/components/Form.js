@@ -1,10 +1,15 @@
+// Form component 
+// Sources: reactjs.org/docs/hooks-state.html
 import React, { useState } from 'react';
 import Debits from './Debits';
 import Credits from './Credits';
 
 const Form = () => {
+    // Using the state hook, uses Credits state as default 
     const [state, setState] = useState(<Credits/>);
 
+    // Function for form submit button to change HTML of page
+    // Can change user name, background color, text color 
     const onSubmit = () => {
         document.getElementById("username").innerHTML = document.getElementById('usr').value;
         document.body.style.backgroundColor = document.getElementById('bg').value;
@@ -12,10 +17,13 @@ const Form = () => {
         setState(<Credits/>)
     }
 
+    // Functions to set state for each of the 3 buttons
     const viewP = () => {setState('CustomizeProfile')}
     const viewC = () => {setState(<Credits/>)}
     const viewD = () => {setState(<Debits/>);}
 
+    // If the state is this, still show 3 buttons 
+    // But also show a form to submit for choosing username, background/text colors
     if (state === 'CustomizeProfile') {
         return (
             <div>
@@ -48,6 +56,7 @@ const Form = () => {
         );
     }
     return (
+        // {state} is already Credits so show it
         <div>
             <div class = 'flex-parent jc-center'>
                 <button onClick={viewP}>Customize Profile</button>
